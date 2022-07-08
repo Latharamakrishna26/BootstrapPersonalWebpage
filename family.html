@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+      });
+    });
+    </script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 150%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+img {
+  border: 5px solid #555;
+}
+h2{
+    text-align: center;
+    color:deeppink;
+}
+body{
+    background-image: url('Images/img16.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.tenkasi{
+    float: right;
+}
+p{
+    padding-left: 4%;
+      letter-spacing: 3px;
+      text-align: justify;
+      text-indent: 100px;
+      font-size: larger;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+  
+  <button class="ui icon basic button">
+    <a href="project-HOMEPAGE.html"><i class="window close icon"></i></a>
+    </button>
+    
+    
+
+<h2>FAMILY</h2>
+
+
+<div class="row">
+  <div class="column">
+      <div class="container">
+    <img src="Images/dad.jpg" alt="Avatar" class="image" style="width:150%;height: 350px;">
+    <div class="overlay">My Father</div>
+  </div>
+    </div>
+  <div class="column">
+    <div class="container">
+        <img src="Images/mom1.jpg" alt="Avatar" class="image" style="width:150%;height:350px">
+        <div class="overlay">My Mother</div>
+      </div>
+    </div>
+  <div class="column">
+    <div class="container">
+        <img src="Images/ishu2.jpg" alt="Avatar" class="image" style="width:150%;height:350px">
+        <div class="overlay">My Sister</div>
+      </div>
+    
+  </div>
+</div><br><br>
+
+<h2 id="flip">HOMETOWN</h2>
+<div id="panel"><p><img src="Images/tenkasi.jpg" alt="tenkasi" style="margin-left:15%" class="tenkasi">
+My Hometown is Tenkasi...It is located in Tirunelveli...Many temples are in Tenkasi...While this town is known for waterfalls and temples, it has been made famous for its Courtallam Falls and Kasi Viswanathar Temple. Tenkasi is famous for its main temple which is believed to be built by a Pandyan King, King Arikeari Parakrama after Lord Viswanatha appeared in his dream and instructed him to do so.
+<br>
+Tenkasi Town is a District Headquarter of Tenkasi District. It is located at 54 K.m North west of Tirunelveli Town, on the Quilon – Tirunelveli Highway. The town is also connected by Broad gage Railway line Viz Tirunelveli – Shengottai line and Virudunagar – Quilon line
+</p>
+</div>
+</body>
+</html>
+

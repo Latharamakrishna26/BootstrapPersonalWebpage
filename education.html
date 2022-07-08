@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ 
+  
+    #mySidenav a {
+      position: absolute;
+      left: -80px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 120px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+      position: fixed;
+    }
+    
+    #mySidenav a:hover {
+      left: 0;
+    }
+    
+    #about {
+      top: 20px;
+      background-color: #04AA6D;
+    }
+    
+    #skill {
+      top: 80px;
+      background-color: #2196F3;
+    }
+    
+    #pro {
+      top: 140px;
+      background-color: #f44336;
+    }
+    
+    #memory {
+      top: 200px;
+      background-color: #555
+    }
+    #home{
+        top: 260px;
+        background-color: aqua;
+        text-align: center;
+    }
+    .container{
+      background-color: lightpink;
+      border: 1px solid gray;
+      padding: 35px;
+      width: 95%;
+      
+    }
+        h2 {
+      text-shadow: 0 0 3px #FF0000;
+      text-align: center;
+      background-color: gainsboro;
+      
+    }
+    h3{
+      color:indigo;
+    }
+    
+    
+    .para{
+      padding-left: 30%;
+      letter-spacing: 3px;
+      text-align: justify;
+      text-indent: 100px;
+
+    }
+    .img1{
+      float: right;
+      
+    }
+    .school{
+      background-color: darkseagreen;
+      border: 1px solid gray;
+      padding: 30px;
+      height: 350px;
+      
+    }
+    .para1{
+      padding-left: 4%;
+      letter-spacing: 3px;
+      text-align: center;
+      text-indent: 100px;
+    }
+    .clg{
+      background-color: mediumpurple;
+      border: 1px solid gray;
+      padding: 35px;
+      height: 400px;
+    }
+    .img2{
+      float: left;
+    }
+    .para2{
+      padding-left: 30%;
+      letter-spacing: 3px;
+      text-align: justify;
+      text-indent: 100px;
+    }
+    
+
+    .skl {
+    
+    width: 50%;
+    }
+    section {
+  padding: 5rem 9%;
+}
+
+.heading {
+  text-align: center;
+  
+  color: #fff;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}  
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
+    
+    #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+  .modal-content {
+    width: 100%;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+#myImg {
+  border: 5px solid #555;
+}
+h2{ 
+    text-align: center;
+    background-color: bisque;
+}
+
+body{
+    background-image: url('Images/img27.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+        
+  </style>
+  <body>
+    
+    
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="project-HOMEPAGE.html" id="about" class="active">Home</a>
+      <a href="#edu" id="skill">Skills</a>
+     
+      <a href="#cert" id="memory">Certification</a>
+      <a href="pro.html" id="pro">Projects</a>
+     
+      <a href="acievements.html" id="home">Achieve</a>
+    
+    </div>
+    
+        <h2>Education</h2>
+ 
+        
+   <div style="margin-left:80px;">
+   <div class="school">
+   <h3>G.N.Govt Higher secondary school</h3>
+   <img src="Images/img4.jpg" alt="school" class="img1" width="304" height="236">
+   <b><p class="para1">This school is located in Tenkasi...I studied in 9th standard to 12 standard in this school...</p></b>
+<b><p class="para1">School time is the only time which we enjoy most, and when we enter college, we always miss our school life...
+   School life teaches us lots of new things and prepares us to face all the challenges of life...
+    I love my school life and really enjoy it... I have lots of friends, and all my teachers love me...</p></b>
+</div><br><br><br><br>
+<div class="clg">
+  <h3>Arjun College of Technology</h3>
+  <img src="Images/img5.jpg" alt="clg" class="img2" width="304" height="236">
+  <b><p class="para2">This college is located in Thamaraikulam Coimbatore...I am pursuing in B.E computer science and Engineering...</p></b>
+<b><p class="para2">Students bounce back and forth to class, dining hall, dorm, meetings, library, sports, etc. all day long... 
+  They may get up early and stay up late to get it all done...
+  It takes some getting used to, but busy as they are, most college students come to appreciate the freedom they have to manage their own time...</p></b>
+</div>
+
+   <br><br><br><br><br><br><br><br><br><br><br><br>
+   
+<center><div class="skl" id="edu">
+    <section class="skills">
+      <h2 class="heading">My Skills</h2>
+      <div class="box-container">
+        <div class="row">
+          <div class="column">
+      <div class="box">
+      <img src="Images/html.jpg">
+      
+      </div></div>
+      <div class="column">
+      <div class="box">
+      <img src="Images/css.jpg" width="100%" height="190px">
+      
+      </div></div>
+      <div class="column">
+      <div class="box">
+        <h3>Javascript</h3>
+      <img src="Images/js.jpg" width="100%" height="135px">
+     
+      </div></div>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="column">
+    <div class="box">
+    <img src="Images/jq.jpg" width="100%">
+    
+    </div></div>
+    <div class="column">
+    <div class="box">
+    <img src="Images/bootstrap.jpg" width="100%">
+    
+    </div></div>
+    <div class="column">
+    <div class="box">
+      <h3>Python</h3>
+    <img src="Images/python.jpg" width="100%" height="140px">
+    
+    </div></div>
+      </section>
+
+  </div>
+  </center>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+
+<h2>Certification</h2>
+<div class="row">
+    <div class="column" id="cert">
+<img id="myImg" src="Images/certificate1.jpg" alt="Internship" width="480" height="650">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+   </div>
+   <div class="column">
+    <img id="myImg" src="Images/cert1.jpg" alt="Type" width="480" height="650">
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+       </div>
+       <div class="column">
+        <img id="myImg" src="Images/cert.jpg" alt="coddissia" width="480" height="650">
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+           </div>
+       </div>
+       <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+
+<br>
+
+
+
+</body>
+</html> 

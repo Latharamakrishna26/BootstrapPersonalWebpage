@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+  
+    body{
+      
+            background-image: url('Images/img9.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+    }
+.accordion {
+  position: auto;
+  background-color: #eee;
+  color:darkorchid;
+  cursor: pointer;
+  padding: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family:cursive;
+  font-size: large;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:cornsilk;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+  padding-left: 37%;
+  text-shadow: 2px 2px olivedrab;
+}
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: #0005;
+  line-height: 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+
+</style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="project-HOMEPAGE.html">Home</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        
+        <li><a href="memory.html">Memory</a></li>
+    </ul>
+    
+
+  
+
+<h2>ACHIEVEMENTS</h2>
+
+
+<button class="accordion">Internship</button>
+<div class="panel">
+  <p>Completed Internship training for 'Python with Data Science' in company Accent Techno Soft.</p>
+</div>
+
+<button class="accordion">Exhibition</button>
+<div class="panel">
+  <p> Actively participated in CODDISSIA exhibition in the event.</p>
+</div>
+
+<button class="accordion">Online webinar</button>
+<div class="panel">
+  <p>  Participated in Online python course in RN Reddy IT School.</p>
+</div>
+
+<script>
+  
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+} 
+</script>
+
+</body>
+</html>
